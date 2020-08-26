@@ -1,10 +1,12 @@
-let days = [];
-let daysRequired = 6
-
-for (let i = 0; i <= daysRequired; i++) {
-    days.push(moment().add(i, 'days').format('dddd, Do MMMM YYYY'))
-}
-$(document).ready(function () {
+function myFunction() {
+    var x = document.getElementById("myDate").value;
+    document.getElementById("demo").innerHTML = x;
+    let days = [];
+    let daysRequired = 6
+    for (let i = 0; i <= daysRequired; i++) {
+        days.push(moment().add(i, 'days').format('dddd, Do MMMM YYYY'))
+    }
+    console.log(days)
     var day1 = days[0]
     $('#lista').html(
         $('<div/>', {
@@ -47,9 +49,7 @@ $(document).ready(function () {
             html: day7
         }).text()
     )
-});
+}
 
-$('.cssbuttongo').click(function () {
-    $('#myModal').modal('show');
-});
+
 

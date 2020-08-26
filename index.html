@@ -19,7 +19,7 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-dark mb-3">
-    <img class="img" src="MET_April_5.jpg" />
+    <img class="img" src="images/MET_April_5.jpg" />
     <a href="#" class="navbar-brand mr-3">Slot Booking</a>
     <button
       type="button"
@@ -37,125 +37,60 @@
   </nav>
     <div class="container">    
         <div class="row">
-            <div class="col-sm-6 form-group">
-                <div class="input-group" id="DateDemo">
-                  <label>Date:</label>
-                  <input type='date' id='weeklyDatePicker' placeholder="Select Week" />
-                </div>
-            </div>
+          <label>Date:</label>
+          <input type="date" id="myDate"  value="">
+          <button onclick="myFunction()">Go</button>
+          <p style="display:none" id="demo"></p>
         </div>
         <div class="row">
           <div class="col">
             <div id="lista">
             </div>
             <div class="">
-            <button type="button" data-toggle="modal" data-target="#mymodal" class="cssbuttongo btn btn-primary">9 AM</button>
-            <button type="button" data-toggle="modal" data-target="#mymodal" class="cssbuttongo btn btn-primary" class="btn btn-primary">10 AM</button> 
-            <button type="button" data-toggle="modal" data-target="#mymodal" class="cssbuttongo btn btn-primary" class="btn btn-primary">11 AM</button>
-            <button type="button" data-toggle="modal" data-target="#mymodal" class="cssbuttongo btn btn-primary" class="btn btn-primary">12 PM</button>
-            <button type="button" data-toggle="modal" data-target="#mymodal" class="cssbuttongo btn btn-primary" class="btn btn-primary">1 PM</button>
-            <button type="button" data-toggle="modal" data-target="#mymodal" class="cssbuttongo btn btn-primary" class="btn btn-primary">2 PM</button>
-            <button type="button" data-toggle="modal" data-target="#mymodal" class="cssbuttongo btn btn-primary" class="btn btn-primary">3 PM</button>
-            <button type="button" data-toggle="modal" data-target="#mymodal" class="cssbuttongo btn btn-primary" class="btn btn-primary">4 PM</button>
-            <button type="button" data-toggle="modal" data-target="#mymodal" class="cssbuttongo btn btn-primary" class="btn btn-primary">5 PM</button>
-            <button type="button" data-toggle="modal" data-target="#mymodal" class="cssbuttongo btn btn-primary" class="btn btn-primary">6 PM</button>
+            <button type="button" data-toggle="modal" data-target="#mymodal" class="buttongo btn btn-primary">9 AM</button>
             </div>
           </div>
           <div class="col">
             <div id="listb">
             </div>
             <div class="">
-              <button type="button" class="btn btn-primary">9 AM</button>
-              <button type="button" class="btn btn-primary">10 AM</button> 
-              <button type="button" class="btn btn-primary">11 AM</button>
-              <button type="button" class="btn btn-primary">12 PM</button>
-              <button type="button" class="btn btn-primary">1 PM</button>
-              <button type="button" class="btn btn-primary">2 PM</button>
-              <button type="button" class="btn btn-primary">3 PM</button>
-              <button type="button" class="btn btn-primary">4 PM</button>
-              <button type="button" class="btn btn-primary">5 PM</button>
-              <button type="button" class="btn btn-primary">6 PM</button>
-              </div>
+            <button type="button" data-toggle="modal" data-target="#mymodal" class="buttongo btn btn-primary">9 AM</button>
+            </div>
           </div>
           <div class="col">
             <div id="listc">
             </div>
             <div class="">
-              <button type="button" class="btn btn-primary">9 AM</button>
-              <button type="button" class="btn btn-primary">10 AM</button> 
-              <button type="button" class="btn btn-primary">11 AM</button>
-              <button type="button" class="btn btn-primary">12 PM</button>
-              <button type="button" class="btn btn-primary">1 PM</button>
-              <button type="button" class="btn btn-primary">2 PM</button>
-              <button type="button" class="btn btn-primary">3 PM</button>
-              <button type="button" class="btn btn-primary">4 PM</button>
-              <button type="button" class="btn btn-primary">5 PM</button>
-              <button type="button" class="btn btn-primary">6 PM</button>
-              </div>
+            <button type="button" data-toggle="modal" data-target="#mymodal" class="buttongo btn btn-primary">9 AM</button>
+            </div>
           </div>
           <div class="col">
             <div id="listd">
             </div>
             <div class="">
-              <button type="button" class="btn btn-primary">9 AM</button>
-              <button type="button" class="btn btn-primary">10 AM</button> 
-              <button type="button" class="btn btn-primary">11 AM</button>
-              <button type="button" class="btn btn-primary">12 PM</button>
-              <button type="button" class="btn btn-primary">1 PM</button>
-              <button type="button" class="btn btn-primary">2 PM</button>
-              <button type="button" class="btn btn-primary">3 PM</button>
-              <button type="button" class="btn btn-primary">4 PM</button>
-              <button type="button" class="btn btn-primary">5 PM</button>
-              <button type="button" class="btn btn-primary">6 PM</button>
-              </div>
+            <button type="button" data-toggle="modal" data-target="#mymodal" class="buttongo btn btn-primary">9 AM</button>
+            </div>
           </div>
           <div class="col">
             <div id="liste">
             </div>
             <div class="">
-              <button type="button" class="btn btn-primary">9 AM</button>
-              <button type="button" class="btn btn-primary">10 AM</button> 
-              <button type="button" class="btn btn-primary">11 AM</button>
-              <button type="button" class="btn btn-primary">12 PM</button>
-              <button type="button" class="btn btn-primary">1 PM</button>
-              <button type="button" class="btn btn-primary">2 PM</button>
-              <button type="button" class="btn btn-primary">3 PM</button>
-              <button type="button" class="btn btn-primary">4 PM</button>
-              <button type="button" class="btn btn-primary">5 PM</button>
-              <button type="button" class="btn btn-primary">6 PM</button>
-              </div>
+            <button type="button" data-toggle="modal" data-target="#mymodal" class="buttongo btn btn-primary">9 AM</button>
+            </div>
           </div>
           <div class="col">
             <div id="listf">
             </div>
             <div class="">
-              <button type="button" class="btn btn-primary">9 AM</button>
-              <button type="button" class="btn btn-primary">10 AM</button> 
-              <button type="button" class="btn btn-primary">11 AM</button>
-              <button type="button" class="btn btn-primary">12 PM</button>
-              <button type="button" class="btn btn-primary">1 PM</button>
-              <button type="button" class="btn btn-primary">2 PM</button>
-              <button type="button" class="btn btn-primary">3 PM</button>
-              <button type="button" class="btn btn-primary">4 PM</button>
-              <button type="button" class="btn btn-primary">5 PM</button>
-              <button type="button" class="btn btn-primary">6 PM</button>
-              </div>
+            <button type="button" data-toggle="modal" data-target="#mymodal" class="buttongo btn btn-primary">9 AM</button>
+            </div>
           </div>
           <div class="col">
             <div id="listg">
             </div>
             <div class="">
-              <button type="button" class="btn btn-primary">9 AM</button>
-              <button type="button" class="btn btn-primary">10 AM</button> 
-              <button type="button" class="btn btn-primary">11 AM</button>
-              <button type="button" class="btn btn-primary">12 PM</button>
-              <button type="button" class="btn btn-primary">1 PM</button>
-              <button type="button" class="btn btn-primary">2 PM</button>
-              <button type="button" class="btn btn-primary">3 PM</button>
-              <button type="button" class="btn btn-primary">4 PM</button>
-              <button type="button" class="btn btn-primary">5 PM</button>
-              <button type="button" class="btn btn-primary">6 PM</button>
-              </div>
+            <button type="button" data-toggle="modal" data-target="#mymodal" class="buttongo btn btn-primary">9 AM</button>
+            </div>
           </div>
         </div>
     </div>
