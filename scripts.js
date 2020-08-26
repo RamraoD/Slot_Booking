@@ -1,6 +1,6 @@
 function myFunction() {
     var x = document.getElementById("myDate").value;
-    document.getElementById("date").innerHTML = x;
+    document.getElementById("demo").innerHTML = x;
     let days = [];
     let daysRequired = 6
     for (let i = 0; i <= daysRequired; i++) {
