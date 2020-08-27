@@ -2,6 +2,7 @@ $(document).ready(function () {
   $("#datepicker").datepicker({
     onSelect: function (_date, _datepicker) {
       var currentDate = new Date(_date);
+      var timeslot =[];
       var next7Days = [];
       let daysRequired = 7;
       for (var i = 0; i < daysRequired; i++) {
@@ -9,7 +10,7 @@ $(document).ready(function () {
         // next7Days.push(nextDate);
         // console.log(nextDate.format("ddd, Do MMM YYYY"));
         next7Days.push(moment(currentDate).add(i + 1, "days").format("dddd, Do MMMM YYYY"));
-        console.log(next7Days)
+        // console.log(next7Days)
       }
       var day1 = next7Days[0]
       $('#lista').html(
@@ -56,13 +57,31 @@ $(document).ready(function () {
       return true;
     },
   });
+//   timeslot function
+  function getTimeSlot(start, end){
+    var startTime = moment(start, 'HH:mm');
+    var endTime = moment(end, 'HH:mm');
+    
+    if( endTime.isBefore(startTime) ){
+      endTime.add(1, 'day');
+    }
+  
+    var timeSlot = [];
+  
+    while(startTime <= endTime){
+        timeSlot.push(new moment(startTime).format('HH:mm'));
+      startTime.add(60, 'minutes');
+    }
+    return timeSlot;
+  }
+  var timeSlot = getTimeSlot('09:00', '18:00');
+  console.log('timeSlot ', timeSlot);
+
+//   Creating Dynamic buttons
+    $('button').on('click',function(){
+        var r= $('<input type="button" value=""/>');
+        $("body").append(r);
+});
 });
 
-// function myFunction() {
-//   let days = [];
-//   let daysRequired = 6;
-//   for (let i = 0; i <= daysRequired; i++) {
-//     days.push(moment().add(i, "days").format("dddd, Do MMMM YYYY"));
-//   }
-//   console.log(days);
-// }
+
