@@ -13,6 +13,7 @@
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="./scripts.js"></script>
 </head>
 
 <body>
@@ -40,30 +41,5 @@
   </div>
   </div>
 </body>
-<script>
-  $(function () {
-    $("#datepicker").datepicker({
-      onSelect: function (_date, _datepicker) {
-        var myDate = new Date(_date);
-        // console.log(myDate)
-        myDate.setDate(myDate.getDate() + 6);
-        var daysOfYear = 6;
-        for (var d = new Date(_date); d <= myDate; d.setDate(d.getDate() + 6)) {
-          console.log(myDate)
-          daysOfYear.push(((d.getMonth() > 8) ? (d.getMonth() + 1) : ('0' + (d.getMonth() + 1))) + '/' + ((d.getDate() > 9) ? d.getDate() : ('0' + d.getDate())) + '/' + d.getFullYear());
-          console.log(d)
-        }
-        console.log(daysOfYear)
-        var day1 = daysOfYear[0]
-        $('.list').html(
-          $('<div/>', {
-            html: day1
-          }).text()
-        )
-      }
-    })
-  });
-
-</script>
 
 </html>
