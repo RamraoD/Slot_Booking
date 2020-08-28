@@ -71,7 +71,7 @@ $(document).ready(function () {
     var timeSlot = [];
 
     while(startTime <= endTime){
-        timeSlot.push(new moment(startTime).format('HH:mm'));
+        timeSlot.push(new moment(startTime).format('hh:mm A'));
       startTime.add(60, 'minutes');
     }
     return timeSlot;
@@ -96,5 +96,7 @@ $(document).ready(function () {
     $("#btnSeveen").append($btnSeveen)
   }
 });
-
+function slotBook() {
+    
+}
 
