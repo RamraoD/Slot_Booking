@@ -78,10 +78,26 @@ $(document).ready(function () {
   console.log('timeSlot ', timeSlot);
 
 //   Creating Dynamic buttons
-    $('button').on('click',function(){
-        var r= $('<input type="button" value=""/>');
-        $("body").append(r);
-});
+    var $btn1=$('<input/>').attr({type:'button',name:'mybutton',value: timeSlot[0]});
+    var $btn2=$('<input/>').attr({type:'button',name:'mybutton',value:timeSlot[1]});
+    var $btn3=$('<input/>').attr({type:'button',name:'mybutton',value:timeSlot[2]});
+    var $btn4=$('<input/>').attr({type:'button',name:'mybutton',value:timeSlot[3]});
+    var $btn5=$('<input/>').attr({type:'button',name:'mybutton',value:timeSlot[4]});
+    var $btn6=$('<input/>').attr({type:'button',name:'mybutton',value:timeSlot[5]});
+    var $btn7=$('<input/>').attr({type:'button',name:'mybutton',value:timeSlot[6]});
+    var $btn8=$('<input/>').attr({type:'button',name:'mybutton',value:timeSlot[7]});
+    var $btn9=$('<input/>').attr({type:'button',name:'mybutton',value:timeSlot[8]});
+    var $btn10=$('<input/>').attr({type:'button',name:'mybutton',value:timeSlot[9]});
+    $("#div1").append($btn1)
+    $("#div2").append($btn2)
+    $("#div3").append($btn3)
+    $("#div4").append($btn4)
+    $("#div5").append($btn5)
+    $("#div6").append($btn6)
+    $("#div7").append($btn7)
+    $("#div8").append($btn8)
+    $("#div9").append($btn9)
+    $("#div10").append($btn10)
 });
 
 
